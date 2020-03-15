@@ -1,0 +1,16 @@
+#pragma omp parallel
+#pragma omp parallel num_threads(n)
+int omp_get_num_procs(void) // возвращает число доступных процессоров
+int omp_get_num_threads(void) // возвращает количество потоков в группе
+int omp_get_thread_num(void) // возвращает номер потока в группе
+private() // приватные переменные для каждого потока, неопределены на главном потоке
+firstprivate() // приватные переменные с инициализацией знаяением на главном потоке, определенным до блока omp
+reduction(operator:list) // редукция
+#pragma omp atomic {BINOP= ++ --}
+#pragma omp critical [name]
+#pragma omp master
+#pragma omp single
+#pragma omp sections {}
+#pragma omp section
+#pragma omp parallel for
+#pragma omp parallel for schedule(static/dynamic/guided/runtime,chunk_size)

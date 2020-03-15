@@ -1,0 +1,7 @@
+T(20,20) : 0.017596 , iter : 100 , difference : 4.362056e-01
+T(20,20) : 0.122721 , iter : 200 , difference : 2.592097e-01
+T(20,20) : 0.240362 , iter : 300 , difference : 1.912031e-01
+T(20,20) : 0.338560 , iter : 400 , difference : 1.540797e-01
+T(20,20) : 0.416785 , iter : 500 , difference : 1.303270e-01
+T(20,20) : 0.479236 , iter : 600 , difference : 1.136655e-01
+T(20,20) : 0.529778 , iter : 700 , difference : 1.012521e-01

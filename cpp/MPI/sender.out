@@ -1,0 +1,10 @@
+Process - 4 , send to -  5 , recived from - 3 , size - 10
+Process - 5 , send to -  6 , recived from - 4 , size - 10
+Process - 6 , send to -  7 , recived from - 5 , size - 10
+Process - 7 , send to -  8 , recived from - 6 , size - 10
+Process - 0 , send to -  1 , recived from - 9 , size - 10
+Process - 1 , send to -  2 , recived from - 0 , size - 10
+Process - 8 , send to -  9 , recived from - 7 , size - 10
+Process - 9 , send to -  0 , recived from - 8 , size - 10
+Process - 2 , send to -  3 , recived from - 1 , size - 10
+Process - 3 , send to -  4 , recived from - 2 , size - 10

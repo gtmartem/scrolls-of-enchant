@@ -1,0 +1,6 @@
+dimension : 10 , time : 0.010222 , sum : 32168.000000
+dimension : 100 , time : 0.008062 , sum : 229851.000000
+dimension : 1000 , time : 0.010290 , sum : 2535718.000000
+dimension : 10000 , time : 0.010065 , sum : 24692682.000000
+dimension : 100000 , time : 0.031018 , sum : 244554109.000000
+dimension : 1000000 , time : 0.429613 , sum : 2452825581.000000

@@ -1,0 +1,66 @@
+MPI_Init(int* pargc,char*** pargv);
+MPI_Finalize();
+int MPI_Comm_rank(MPI_Comm comm, int* rank)
+int MPI_Comm_size(MPI_Comm comm, int* size)
+int MPI_Send(void* buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm)
+int MPI_Recv(void* buf, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm comm, MPI_Status *status)
+double MPI_Wtime(void)
+int MPI_Barrier(MPI_Comm *comm)
+int MPI_Rsend(void* buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm)
+int MPI_Ssend(void* buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm)
+int MPI_Bsend(void* buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm)
+int MPI_Pack_size(int count, MPI_Datatype datatype, MPI_Comm comm, int* size)
+int MPI_Buffer_attach(void* buffer, int size)
+int MPI_Buffer_detach(void* buffer, int* size)
+struct MPI_Status 
+{
+    MPI_SOURCE
+    MPI_TAG
+    MPI_ERROR
+}
+MPI_ANY_TAG; MPI_ANY_SOURCE
+int MPI_Isend(void* buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm, MPI_Request *request)
+int MPI_Issend(void* buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm, MPI_Request *request)
+int MPI_Ibsend(void* buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm, MPI_Request *request)
+int MPI_Irecv(void* buf, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm comm, MPI_Request *request)
+int MPI_Wait(MPI_Request *request, MPI_Status *status)
+int MPI_Test(MPI_Request *request, int *flag, MPI_Status *status)
+int MPI_Waitany(int count, MPI_Request *array_of_requests, int *index, MPI_Status *status)
+int MPI_Testany(int count, MPI_Request *array_of_requests, int *index, int *flag, MPI_Status *status)
+int MPI_Waitall(int count, MPI_Request *array_of_requests, int *index, MPI_Status *status)
+int MPI_Comm_split(MPI_Comm comm, int color, int key, MPI_Comm *newcomm)
+int MPI_Comm_create(MPI_Comm comm, MPI_group group, MPI_Comm *newcomm)
+int MPI_Comm_free(MPI_Comm *comm)
+MPI_UNDEFINED
+int MPI_Bcast(void* buffer, int count, MPI_Datatype datatype, int root, MPI_Comm comm)
+int MPI_Scatter(void *sendbuffer, in sendcount, MPI_Datatype datatype, void *recvbuffer, int recvcount, 
+                MPI_Datatype datatype, int root, MPI_Comm comm)
+int MPI_Gather(void* sendbuffer, int sendcount, MPI_Datatype datatype, void* recvbuffer, unt recvcount,
+                MPI_Datatype datatype, int root, MPI_Comm comm)
+int MPI_Scatterv(void *sendbuffer, int *sendcounts, int *displs, MPI_Datatype sendtype, void* recvbuffer,
+                int recvcount, MPI_Datatype recvtype, int root, MPI_Comm comm)
+int MPI_Gatherv(void* sendbuffer, int *sendcount, MPI_Datatype sendtype, void *recvbuffer, int *recvcount,
+                int *despls, MPI_Datatype recvdatatype, int root, MPI_Comm comm)
+int MPI_Allgatherv(void *sendbuffer, int sendcount, MPI_Datatype sendtype, void *recvbuffer, int *recvcount,
+                int *despls, MPI_Datatype recvtype, MPI_Comm comm)
+int MPI_Reduce(void *sendbuffer, void *recvbuffer, int count, MPI_Datatype datatype, MPI_Op op, int root, MPI_Comm comm)
+MPI_MAX; MPI_MIN; MPI_SUM; MPI_PROD; MPI_LAND; MPI_BAND; MPI_LOR; MPI_BOR; MPI_LXOR; MPI_BXOR; MPI_MAXLOC; MPI_MINLOC
+MPI_CHAR; MPI_SHORT; MPI_INT; MPI_LONG; MPI_UNSIGNED_CHAR; MPI_UNSIGNED_SHORT; MPI_UNSIGNED; MPI_UNSIGNED_LONG; 
+MPI_FLOAT; MPI_DOUBLE; MPI_LONG_DOUBLE
+MPI_TYPE_CONTIGUOUS; MPI_TYPE_VECTOR; MPI_TYPE_HVECTOR; MPI_TYPE_INDEXED; MPI_TYPE_HINDEXED; MPI_TYPE_STRUCT
+MPI_PACKED; MPI_BYTE
+int MPI_Type_contiguous(int count, MPI_Datatype oldtype, MPI_Datatype *newtype)
+int MPI_Type_vector(int count, int blocklenght, int stride, MPI_Datatype oldtype, MPI_Datatype *newtype)
+int MPI_Type_hvector(int count, int blocklenght, MPI_Aint stride, MPI_Datatype oldtype, MPI_Datatype *newtype)
+int MPI_Type_indexed(inc count, int *array_of_blocklenghts, int *array_of_displacements, MPI_Datatype oldtype,
+                    MPI_Datatype *newtype)
+int MPI_Type_hindexed(inc count, int *array_of_blocklenghts, MPI_Aint *array_of_displacements, MPI_Datatype oldtype, 
+                    MPI_Datatype *newtype)
+int MPI_Type_struct(int count, int *array_of_blocklenghts, MPI_Aint *array_of_displacements, MPI_Datatype *array_of_types,
+                    MPI_Datatype *newtype)
+MPI_Type_commit(MPI_Datatype *type)
+MPI_Type_free(MPI_Datatype* type)
+int MPI_Pack(void* inbuf, int incount, MPI_Datatype datatype, void *outbuffer,  int outsize, int *position, 
+            MPI_Comm comm)
+int MPI_Unpack(void* inbuf, int incount, MPI_Datatype datatype, void *outbuffer,  int outsize, int *position, 
+            MPI_Comm comm)

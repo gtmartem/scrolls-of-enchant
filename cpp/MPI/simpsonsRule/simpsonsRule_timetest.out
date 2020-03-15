@@ -1,0 +1,5 @@
+Time : 14.309126 , N : 1000000000 ,  processes : 2
+Time : 3.941780 , N : 1000000000 ,  processes : 10
+Time : 1.479038 , N : 1000000000 ,  processes : 20
+Time : 1.078249 , N : 1000000000 ,  processes : 30
+Time : 1.260378 , N : 1000000000 ,  processes : 40
