@@ -78,4 +78,3 @@ def qr_decomp(A):
         R = H.dot(R)
     
     return Q, R
-        

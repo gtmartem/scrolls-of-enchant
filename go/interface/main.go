@@ -1,3 +1,5 @@
+// что такое интерфейсы
+
 package main
 
 import "fmt"

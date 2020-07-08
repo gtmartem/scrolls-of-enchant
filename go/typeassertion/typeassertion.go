@@ -7,6 +7,10 @@ import (
 
 type I interface { m() }
 
+// Type Assertion - r, ok := x.(Y).
+// Если Y - не интерфесный тип, то проверяем, что Y реализует интерфейс x и присваеваем r тип string
+// Если Y - интерфейс, то проверяем, реализует ли x интерфейс Y
+
 func main() {
 	// anyType - динамический тип
 	var anyType interface{}
@@ -25,6 +29,7 @@ func main() {
 	// intType имеет конкретный тип int
 	var intType = 100
 	// но anyType - interface{}
+	// anyType = 100
 	anyType = intType
 	fmt.Println("Variable type:", reflect.TypeOf(anyType))
 	integer, ok := anyType.(int)
