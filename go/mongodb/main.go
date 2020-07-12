@@ -35,4 +35,36 @@ func main() {
 		log.Fatalf("error during getting list of databases in mongo: %s", err.Error())
 	}
 	fmt.Println(databases)
+
+	quickstartDatabase := client.Database("quickstart")
+	podcastsCollection := quickstartDatabase.Collection("podcasts")
+	episodesCollection := quickstartDatabase.Collection("episodes")
+	podcastResult, err := podcastsCollection.InsertOne(ctx, bson.D{
+		{Key: "title", Value: "The polyglot developer podcast"},
+		{Key: "author", Value: "Nic Raboy"},
+		{Key: "tags", Value: bson.A{"development", "coding"}},
+	})
+	if err != nil {
+		log.Fatalf("error during inserting podcast to podcastsCollection: %s", err.Error())
+	}
+	fmt.Println(podcastResult.InsertedID)
+
+	episodeResult, err := episodesCollection.InsertMany(ctx, []interface{}{
+		bson.D{
+			{"podcast", podcastResult.InsertedID},
+			{"title", "Episode #1"},
+			{"description", "This is the first episode"},
+			{"duration", 25},
+		},
+		bson.D{
+			{"podcast", podcastResult.InsertedID},
+			{"title", "Episode #2"},
+			{"description", "This is the second episode"},
+			{"duration", 32},
+		},
+	})
+	if err != nil {
+		log.Fatalf("error during inserting episodes to episodesCollection: %s", err.Error())
+	}
+	fmt.Println(episodeResult.InsertedIDs)
 }
