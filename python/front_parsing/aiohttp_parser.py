@@ -24,8 +24,8 @@ class FrontParser:
         page = await self.session.get(url)
         if page.status == 200:
             soup = BeautifulSoup(await page.text(), 'html.parser')
-            footer_block = soup.find("div", attrs={'class': '_2qozQ'})
-            links = footer_block.select("a", attrs={'class': '_3A_Wi'})
+            footer_block = soup.find("div", attrs={'class': FOOTER_DIV_CLASS})
+            links = footer_block.select("a", attrs={'class': FOOTER_LINKS_CLASS})
 
 
 async def main(parser: FrontParser, url: str):
