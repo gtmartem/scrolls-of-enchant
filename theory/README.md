@@ -10,7 +10,8 @@
 
 ## Golang
 
-- [Каналы](https://habr.com/ru/post/308070/)w
+- [Каналы](https://habr.com/ru/post/308070/)
+- [Горутины (Go: Asynchronous Preemption)](https://medium.com/a-journey-with-go/go-asynchronous-preemption-b5194227371c)
 - [Интерфейсы (очень просто)](https://habr.com/ru/company/mailru/blog/463063/)
 
 ## Databasess
@@ -24,8 +25,11 @@
 - [Двоиичная куча (Binary heap)](https://ru.wikipedia.org/wiki/Двоичная_куча)
 - [Б-дерево](https://habr.com/ru/company/otus/blog/459216/)
 
-
 ## Redis
 
 - [Redis as LRU cache](https://redis.io/topics/lru-cache)
 - [Redis data types](https://redis.io/topics/data-types) 
+
+## Good questions for interview
+
+- [Base + golang](https://medium.com/@victor_nerd/golang-interview-questions-bd3064f2ff69)
