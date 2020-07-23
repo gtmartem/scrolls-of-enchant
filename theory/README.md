@@ -14,7 +14,7 @@
 - [Горутины (Go: Asynchronous Preemption)](https://medium.com/a-journey-with-go/go-asynchronous-preemption-b5194227371c)
 - [Интерфейсы (очень просто)](https://habr.com/ru/company/mailru/blog/463063/)
 
-## Databasess
+## Databases
 
 - [Шардирование](https://habr.com/en/company/oleg-bunin/blog/433370/)
 
@@ -25,10 +25,18 @@
 - [Двоиичная куча (Binary heap)](https://ru.wikipedia.org/wiki/Двоичная_куча)
 - [Б-дерево](https://habr.com/ru/company/otus/blog/459216/)
 
+## Deploy
+
+- [Стратегии деплоя](https://habr.com/ru/company/flant/blog/471620/)
+
 ## Redis
 
 - [Redis as LRU cache](https://redis.io/topics/lru-cache)
 - [Redis data types](https://redis.io/topics/data-types) 
+
+## Books:
+
+- [Go Programming Language, The (Addison-Wesley Professional Computing Series)](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440?ref_=fsclp_pl_dp_1)
 
 ## Good questions for interview
 
