@@ -15,6 +15,7 @@
 - [Интерфейсы (очень просто)](https://habr.com/ru/company/mailru/blog/463063/)
 - [Golang make HTTP request](https://medium.com/@masnun/making-http-requests-in-golang-dd123379efe7)
 - [Много примеров кода](https://essential-go.programming-books.io)
+- [Range loop over channel](https://tour.golang.org/concurrency/4)
 
 ## Databases
 
