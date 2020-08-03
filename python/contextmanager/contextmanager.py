@@ -16,6 +16,8 @@ async def retry_on_error(f: Callable, *args,
     rv = None
     for _ in range(tries):
         try:
+            # не используем yield тут, так как после отработки блока async with ошбика вернется сюда
+            # и, если он совпадет со списком errors, то будет обработана, а не выброшена в стек.
             rv = await f(*args, **kwargs)
             error = None
             break

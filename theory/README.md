@@ -16,6 +16,12 @@
 - [Golang make HTTP request](https://medium.com/@masnun/making-http-requests-in-golang-dd123379efe7)
 - [Много примеров кода](https://essential-go.programming-books.io)
 - [Range loop over channel](https://tour.golang.org/concurrency/4)
+- [Defer and err != nil](https://stackoverflow.com/questions/16280176/go-panic-runtime-error-invalid-memory-address-or-nil-pointer-dereference)
+- [Linter](https://github.com/golangci/golangci-lint)
+
+## PostgreSQL
+
+- [Партиционирование](https://habr.com/ru/post/273933/)
 
 ## Databases
 

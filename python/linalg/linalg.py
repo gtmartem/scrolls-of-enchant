@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def danilevksy_method(A):
     
     '''
@@ -20,6 +21,7 @@ def danilevksy_method(A):
         A = np.dot(np.dot(np.linalg.inv(S),A),S)
         
     return A
+
 
 def iter_method(A, B, eps = 0.01):
 
@@ -57,6 +59,7 @@ def iter_method(A, B, eps = 0.01):
                 check = abs(X[_][0] - X_old[_][0])
         if check < eps:
             return i, X
+
 
 def qr_decomp(A):
 
