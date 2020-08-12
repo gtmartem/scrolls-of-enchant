@@ -19,6 +19,11 @@
 - [Defer and err != nil](https://stackoverflow.com/questions/16280176/go-panic-runtime-error-invalid-memory-address-or-nil-pointer-dereference)
 - [Linter](https://github.com/golangci/golangci-lint)
 
+## OS
+
+- [chmod](https://ru.wikipedia.org/wiki/Chmod)
+- [File types](https://en.wikipedia.org/wiki/Unix_file_types)
+
 ## PostgreSQL
 
 - [Партиционирование](https://habr.com/ru/post/273933/)
