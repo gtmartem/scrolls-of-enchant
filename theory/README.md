@@ -27,6 +27,7 @@
 ## PostgreSQL
 
 - [Партиционирование](https://habr.com/ru/post/273933/)
+- [Оконные функции](https://habr.com/ru/post/268983/)
 
 ## Databases
 
