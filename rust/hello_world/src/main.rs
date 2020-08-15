@@ -5,6 +5,5 @@
 
 
 fn main() {
-    let name = "M";
     println!("Hello, world! Привет, Мир!");
 }
