@@ -18,6 +18,7 @@
 - [Range loop over channel](https://tour.golang.org/concurrency/4)
 - [Defer and err != nil](https://stackoverflow.com/questions/16280176/go-panic-runtime-error-invalid-memory-address-or-nil-pointer-dereference)
 - [Linter](https://github.com/golangci/golangci-lint)
+- [Errors handling](https://itnext.io/golang-error-handling-best-practice-a36f47b0b94c)
 
 ## OS
 
