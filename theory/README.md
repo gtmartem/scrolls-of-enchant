@@ -18,13 +18,13 @@
 - [Range loop over channel](https://tour.golang.org/concurrency/4)
 - [Defer and err != nil](https://stackoverflow.com/questions/16280176/go-panic-runtime-error-invalid-memory-address-or-nil-pointer-dereference)
 - [Linter](https://github.com/golangci/golangci-lint)
+- [RPC](https://medium.com/nuances-of-programming/удалённые-вызовы-процедур-в-golang-117b4174bc9e)
 - [Errors handling](https://itnext.io/golang-error-handling-best-practice-a36f47b0b94c)
 
 ## OS
 
 - [chmod](https://ru.wikipedia.org/wiki/Chmod)
-- [File types](https://en.wikipedia.org/wiki/Unix_file_types)
-
+- [File types](https://en.wikipedia.org/wiki/Unix_file_type
 ## PostgreSQL
 
 - [Партиционирование](https://habr.com/ru/post/273933/)
