@@ -83,7 +83,7 @@ func main() {
 		select {
 		case <- ctx.Done():
 			log.Print("end data_processor")
-			break
+			return
 		default:
 			text, _ := reader.ReadString('\n')
 			verbs := strings.Split(text, " ")
