@@ -20,6 +20,7 @@
 - [Linter](https://github.com/golangci/golangci-lint)
 - [RPC](https://medium.com/nuances-of-programming/удалённые-вызовы-процедур-в-golang-117b4174bc9e)
 - [Errors handling](https://itnext.io/golang-error-handling-best-practice-a36f47b0b94c)
+- [JSON,omitempty](https://www.sohamkamani.com/golang/2018-07-19-golang-omitempty/)
 
 ## OS
 
