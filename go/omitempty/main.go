@@ -47,6 +47,10 @@ type Restaurant struct {
 	NumberOfCustomers *int `json:",omitempty"`
 }
 
+type Response struct {
+	Result json.RawMessage `json:"result"`
+}
+
 func main() {
 	// Print fulfilled struct marshalled to JSON:
 	d := Dog{
@@ -92,6 +96,11 @@ func main() {
 	noc := 0
 	r := Restaurant{NumberOfCustomers: &noc}
 	b, _ = json.Marshal(r)
+	fmt.Println(string(b))
+
+	// json.RawMessage for null Marshalling:
+	resp := Response{}
+	b, _ = json.Marshal(resp)
 	fmt.Println(string(b))
 }
 
