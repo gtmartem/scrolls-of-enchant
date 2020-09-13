@@ -22,14 +22,26 @@
 - [Errors handling](https://itnext.io/golang-error-handling-best-practice-a36f47b0b94c)
 - [JSON,omitempty](https://www.sohamkamani.com/golang/2018-07-19-golang-omitempty/)
 
+
+## git
+
+- [Rename local and remote branch](https://stackoverflow.com/questions/30590083/how-do-i-rename-both-a-git-local-and-remote-branch-name)
+
+
 ## OS
 
 - [chmod](https://ru.wikipedia.org/wiki/Chmod)
-- [File types](https://en.wikipedia.org/wiki/Unix_file_type
+- [File types](https://en.wikipedia.org/wiki/Unix_file_type)
+
 ## PostgreSQL
 
 - [Партиционирование](https://habr.com/ru/post/273933/)
 - [Оконные функции](https://habr.com/ru/post/268983/)
+
+## Kafka
+
+- [Заметки](https://habr.com/ru/post/354486/)
+- [Коротко о Kafka](https://fuse8.ru/articles/apache-kafka)
 
 ## Databases
 
