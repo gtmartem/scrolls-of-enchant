@@ -14,7 +14,7 @@ defusedxml==0.6.0
 idna==2.9
 memory-profiler==0.57.0
 multidict==4.7.6
-Pillow==7.1.2
+Pillow==8.1.1
 psutil==5.7.2
 pycparser==2.20
 requests==2.23.0
